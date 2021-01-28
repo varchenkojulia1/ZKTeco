@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-icon/font-icons.css">
     <link rel="stylesheet" href="css/app.min.css">
-    <link href="font/stylesheet.css" type="text/css" rel="stylesheet">
-    <link rel="shortcut icon" href="#" />
+    <link href="font/stylesheet-font-myriad-pro.css" type="text/css" rel="stylesheet">
+
     <title>Main</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
         <div class="col d-flex">
             <nav class="navbar navbar-expand-lg navbar-dark navbar-expand-md navbar-expand-sm" >
                 <div class="col-1 toggler">
-                    <button  type="button" class="menuBtn" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button  type="button" >
+                        <span class="icon-menu"></span>
                     </button>
                 </div>
 
@@ -43,35 +44,27 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-md-flex d-lg-flex d-sm-none col-md-4 col-lg-2 search-form d-md-flex" >
+                <div class="d-md-flex d-lg-flex d-sm-none col-md-3 col-lg-2 search-form d-md-flex" >
                     <form class=" d-md-inline-block d-lg-inline-block d-sm-none">
                         <input  type="search" placeholder="Я ищу..." aria-label="Search">
-                        <button class="btn-subm d-flex" type="submit">
-                           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
-                            <title>search</title>
-                            <path fill="#fff" d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
-                            </svg>
+                        <button class="btn-subm d-flex icon-Search" type="submit">
+
                         </button>
 
                     </form>
                 </div>
 
-                <div class="d-sm-none phone-number d-md-none d-lg-block d-lg-block ">8 495-132-31-33</div>
-                <div class="d-lg-none greating d-sm-none col-md-2 d-md-block">Привет, <span class="user-name">Андрей</span></div>
+                <div class="d-lg-none greating d-sm-none col-md-3 d-md-block">Привет, <span class="user-name icon-Account">Андрей</span></div>
 
-                <div class="btn-callback d-md-none d-lg-block col-lg d-sm-none">
-                        <a href="#">Обратный <br>звонок</a>
-                    </div>
+                <div class="d-sm-none phone-number d-md-none d-lg-flex com-lg-2">
+                    <p>8 495-132-31-33</p>
+                    <div class="btn-callback"><a href="#">Обратный звонок</a></div>
+                </div>
+
+
                 <div class="top-signs col-sm-3 col-lg-1 col-md-2">
-                    <span class="d-lg-none d-sm-none d-md-inline">
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-person" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-                            </svg></a>
-                        </span>
-                        <span class="scale"><a href="#">&#9878;</a></span>
-                        <span class="cart"><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="22" fill="white" class="bi bi-cart3" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                        </svg></a></span>
+                    <span class="scale"><a href="#" class="icon-Scale"></a></span>
+                    <span class="cart"><a href="#" class="icon-card"></a></span>
 
                 </div>
             </nav>
@@ -92,42 +85,47 @@
                 <li data-bs-target="#carouselExampleLight" data-bs-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/dest/banner.png" class=" d-lg-block d-md-block banner1 w-100 " alt="Подробнее" id="banner1">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="img/dest/banner.png" class=" d-lg-block d-md-block banner1  " alt="Подробнее" id="banner1">
                     <img src="img/dest/banner-sm.png"  class="w-100 banner2" alt="Подробнее">
-                        <a href="#" class="more-info-btn"><span>подробнее</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#" class="more-info-btn"><span>подробнее</span>
+                            <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg></a>
+                            </svg>
+                        </a>
                     <div class="carousel-caption d-none d-md-block"></div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <img src="img/dest/banner.png" class="  d-lg-block d-md-block banner1 w-100"  alt="Подробнее" >
                     <img src="img/dest/banner-sm.png"  class="w-100 banner2 " alt="Подробнее">
 
-                    <a href="#" class="more-info-btn"><span>подробнее</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="more-info-btn"><span>подробнее</span>
+                        <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg></a>
                     <div class="carousel-caption d-none d-md-block"></div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="img/dest/banner.png" class=" d-lg-block d-md-block w-100 banner1 " alt="Подробнее">
                     <img src="img/dest/banner-sm.png"  class=" w-100 banner2" alt="Подробнее">
-                    <a href="#" class="more-info-btn"><span>подробнее</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="more-info-btn"><span>подробнее</span>
+                        <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg></a>
                     <div class="carousel-caption d-none d-md-block"></div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="img/dest/banner.png" class="d-lg-block d-md-block  w-100 banner1 "  alt="Подробнее" >
                     <img src="img/dest/banner-sm.png"  class="w-100 banner2" alt="Подробнее">
 
-                    <a href="#" class="more-info-btn"><span>подробнее</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="more-info-btn"><span>подробнее</span>
+                        <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -135,20 +133,21 @@
                     <div class="carousel-caption d-none d-md-block"></div>
                 </div>
             </div>
-            <a class="carousel-control-prev " href="#carouselExampleDark" role="button" data-bs-slide="prev">
-                <span class="btn-prew" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-                    </svg></span>
+            <div class="carousel-control-prev" >
+                <a href="#carouselExampleDark" class="btn-round-prew d-lg-block" role="button" data-bs-slide="prev" >
+                    <div class="btn-prew"></div>
+                </a>
+                    </div>
                 <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next " href="#carouselExampleDark" role="button" data-bs-slide="next">
-                <span class="btn-next" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                    </svg></span>
+            </div>
+            <div class="carousel-control-next " >
+                <a href="#carouselExampleDark" class="btn-round-next d-lg-block" role="button" data-bs-slide="next">
+                    <div class="btn-next"></div>
+                </a>
                 <span class="visually-hidden">Next</span>
-            </a>
+            </div>
         </div>
-    </div></div>
+    </div>
 </header>
 
 
