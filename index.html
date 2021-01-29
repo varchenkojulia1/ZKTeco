@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="font-icon/font-icons.css">
-    <link rel="stylesheet" href="css/app.min.css">
     <link href="font/stylesheet-font-myriad-pro.css" type="text/css" rel="stylesheet">
-
+    <link href="slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css" >
+    <link href="slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="css/app.min.css">
     <title>Main</title>
 </head>
 <body>
@@ -54,7 +55,7 @@
                     </form>
                 </div>
 
-                <div class="d-lg-none greating d-sm-none col-md-3 d-md-block">Привет, <span class="user-name icon-Account">Андрей</span></div>
+                <div class="d-lg-none greating d-sm-none col-md-3 d-md-block">Привет, <a href="#" class="user-name icon-Account">Андрей</a></div>
 
                 <div class="d-sm-none phone-number d-md-none d-lg-flex com-lg-2">
                     <p>8 495-132-31-33</p>
@@ -72,81 +73,59 @@
 
 
 
-
     <!-- carousel -->
-    <div class="col carousel-main">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="col sl-main d-flex">
 
-
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleLight" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleLight" data-bs-slide-to="2"></li>
-                <li data-bs-target="#carouselExampleLight" data-bs-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="img/dest/banner.png" class=" d-lg-block d-md-block banner1  " alt="Подробнее" id="banner1">
-                    <img src="img/dest/banner-sm.png"  class="w-100 banner2" alt="Подробнее">
-                        <a href="#" class="more-info-btn"><span>подробнее</span>
-                            <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                    <div class="carousel-caption d-none d-md-block"></div>
+            <div class="sl-item " >
+                <div class="banner w-100">
+                    <img src="img/dest/banner.png" alt="more info">
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/dest/banner.png" class="  d-lg-block d-md-block banner1 w-100"  alt="Подробнее" >
-                    <img src="img/dest/banner-sm.png"  class="w-100 banner2 " alt="Подробнее">
-
-                    <a href="#" class="more-info-btn"><span>подробнее</span>
-                        <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg></a>
-                    <div class="carousel-caption d-none d-md-block"></div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/dest/banner.png" class=" d-lg-block d-md-block w-100 banner1 " alt="Подробнее">
-                    <img src="img/dest/banner-sm.png"  class=" w-100 banner2" alt="Подробнее">
-                    <a href="#" class="more-info-btn"><span>подробнее</span>
-                        <svg class="animation" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg></a>
-                    <div class="carousel-caption d-none d-md-block"></div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/dest/banner.png" class="d-lg-block d-md-block  w-100 banner1 "  alt="Подробнее" >
-                    <img src="img/dest/banner-sm.png"  class="w-100 banner2" alt="Подробнее">
-
-                    <a href="#" class="more-info-btn"><span>подробнее</span>
-                        <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg></a>
-                    <div class="carousel-caption d-none d-md-block"></div>
-                </div>
-            </div>
-            <div class="carousel-control-prev" >
-                <a href="#carouselExampleDark" class="btn-round-prew d-lg-block" role="button" data-bs-slide="prev" >
-                    <div class="btn-prew"></div>
+                <a href="#" class="more-info-btn"><span>подробнее</span>
+                    <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-                    </div>
-                <span class="visually-hidden">Previous</span>
             </div>
-            <div class="carousel-control-next " >
-                <a href="#carouselExampleDark" class="btn-round-next d-lg-block" role="button" data-bs-slide="next">
-                    <div class="btn-next"></div>
-                </a>
-                <span class="visually-hidden">Next</span>
+            <div class="sl-item " >
+                <div class="banner w-100">
+                    <img src="img/dest/banner.png" alt="more info">
+                </div>
+                <a href="#" class="more-info-btn"><span>подробнее</span>
+                    <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></a>
+            </div>
+
+            <div class="sl-item " >
+                <div class="banner w-100">
+                    <img src="img/dest/banner.png" alt="more info">
+                </div>
+                <a href="#" class="more-info-btn"><span>подробнее</span>
+                    <svg class="animation" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></a>
+            </div>
+            <div class="sl-item " >
+                <div class="banner w-100">
+                    <img src="img/dest/banner.png" alt="more info">
+                </div>
+
+                <a href="#" class="more-info-btn"><span>подробнее</span>
+                    <svg class="animation"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.6" d="M10 7L15.25 12L10 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.3" d="M5 7L10.25 12L5 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 7L20.25 12L15 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></a>
             </div>
         </div>
+
+
     </div>
 </header>
 
@@ -194,29 +173,29 @@
 
     <!-- items -->
     <div class="container-fluid d-flex items">
-        <div class="row d-flex">
-            <div class="col-lg-2 col-md-4">
+        <div class="row d-flex sl">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop1.png" class="d-block" alt="Учет рабочего времени">
                 <a href="#">Учет рабочего времени</a>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop2.png" alt="Умный замок">
                 <a href="#">Умный замок</a>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop3.png" alt="Система контроля доступа(СКУД)">
                 <a href="#">Система контроля доступа(СКУД)</a>
             </div>
 
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop4.png" alt="Система контроля прохода">
                 <a href="#">Система контроля прохода</a>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop5.png" alt="Встраиваемые модули">
                 <a href="#">Встраиваемые модули</a>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 sl__slide">
                 <img src="img/dest/pop6.png" alt="Видеонаблюдение">
                 <a href="#">Видеонаблюдение</a>
             </div>
@@ -438,8 +417,8 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
+
 </body>
 </html>
 
